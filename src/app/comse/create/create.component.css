@@ -1,0 +1,18 @@
+.img{
+text-align: center
+}
+.btcontinu{
+    background: #4a154b;
+    color: #fff;
+    width: 200px;
+
+
+}
+input{
+    height: 30px;
+    width: 190px;
+    border: solid 1px gray;
+    border-radius: 5px;
+  
+
+}

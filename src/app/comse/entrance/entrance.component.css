@@ -1,0 +1,75 @@
+body{
+    background: #f8f8f8;
+}
+
+.divmain{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.erorr{
+    margin: auto;
+    margin-bottom: 20px; 
+    margin-top: 60px;
+    width: 20%;
+    height: 5%;
+    padding: 2%; 
+    background:#fff;
+ 
+}
+
+
+
+.divcontener{
+    width: 20%;
+    padding: 2%; 
+    background:#fff;
+
+
+}
+.btcontinu{
+    width: 200px;
+    background: #007a5a;
+    color:white;
+
+}
+.input{
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 5px;
+   
+
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul{
+    display: flex;
+    margin-right: 12px;
+}
+
+
+ol{
+   color: #616061
+}
+.v{
+    text-align:right;
+
+}
+.p{
+    color:#1264a3;
+}
+
+.s{
+    color: #e01e5a;
+}

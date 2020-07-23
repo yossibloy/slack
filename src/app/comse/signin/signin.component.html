@@ -1,0 +1,114 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <img style="padding: 5px" src="https://a.slack-edge.com/4f28/img/slack_logo.svg" width="100px">
+
+        <ul>
+            <ol><a mat-button href="" target="_blank">Product</a></ol>
+            <ol><a mat-button href="" target="_blank">Pricing</a></ol>
+            <ol><a mat-button href="" target="_blank">Support</a></ol>
+            <ol><a mat-button href="" target="_blank">Download Slack</a></ol>
+            <ol><a mat-button href="" target="_blank">Menu</a></ol>
+        </ul>
+
+    </nav>
+
+    <hr>
+    <div class="divmain">
+        <div StyleDirectiv *ngIf="checkError" class="erorr">
+            <span class="material-icons s">report_problem</span>
+            <b>We couldn’t find your workspace.</b> If you can’t remember your workspace’s address, we can
+            <b><a href="" class="p">send you a reminder</a></b> </div>
+
+        <div StyleDirectiv class="divcontener divmain">
+            <h1 style="font: size 30px"><b>Sign in to your workspace</b></h1>
+            <h5>Enter your workspace's <strong> Slack URL.</strong></h5>
+
+
+            <form [formGroup]="signin">
+                <input StyleDirectiv class="input" type="text" formControlName="username"
+                    placeholder="your-workspace-url"><label><b>.slack.com</b></label><br><br>
+                <button StyleDirectiv routerLink="Entrance" (click)="onSubmit()" [disabled]="signin.invalid"
+                    class="btcontinu" mat-raised-button>Continue<span
+                        class="material-icons">arrow_right_alt</span></button>
+            </form><br>
+
+            <p>dont know your workspace URL? <b><a href="" class="p">find your workspace </a></b></p>
+        </div><br>
+        <p>Need to get your group started on Slack? <b><a routerLink="create" class="p"> Create a new workspace</a></b>
+        </p>
+
+
+
+
+<!-- 
+        <footer>
+            <section class="links">
+                <div class="col span_1_of_4 nav_col">
+                    <ul>
+                        <li class="cat_1">Using Slack</li>
+                        <li><a href="/is">Product</a></li>
+                        <li><a href="/enterprise">Enterprise</a></li>
+                        <li><a href="/pricing?ui_step=28&amp;ui_element=5">Pricing</a></li>
+                        <li><a href="https://get.slack.help/hc/en-us">Support</a></li>
+                        <li><a href="/guides">Slack Guides</a></li>
+                        <li><a href="/apps">App Directory</a></li>
+                        <li><a href="https://api.slack.com/">API</a></li>
+                    </ul>
+                </div>
+                <div class="col span_1_of_4 nav_col">
+                    <ul>
+                        <li class="cat_1">Using Slack</li>
+                        <li><a href="/is">Product</a></li>
+                        <li><a href="/enterprise">Enterprise</a></li>
+                        <li><a href="/pricing?ui_step=28&amp;ui_element=5">Pricing</a></li>
+                        <li><a href="https://get.slack.help/hc/en-us">Support</a></li>
+                        <li><a href="/guides">Slack Guides</a></li>
+                        <li><a href="/apps">App Directory</a></li>
+                        <li><a href="https://api.slack.com/">API</a></li>
+                    </ul>
+                </div>
+                <div class="col span_1_of_4 nav_col">
+                    <ul>
+                        <li class="cat_1">Using Slack</li>
+                        <li><a href="/is">Product</a></li>
+                        <li><a href="/enterprise">Enterprise</a></li>
+                        <li><a href="/pricing?ui_step=28&amp;ui_element=5">Pricing</a></li>
+                        <li><a href="https://get.slack.help/hc/en-us">Support</a></li>
+                        <li><a href="/guides">Slack Guides</a></li>
+                        <li><a href="/apps">App Directory</a></li>
+                        <li><a href="https://api.slack.com/">API</a></li>
+                    </ul>
+                </div>
+                <div class="col span_1_of_4 nav_col">
+                    <ul>
+                        <li class="cat_1">Using Slack</li>
+                        <li><a href="/is">Product</a></li>
+                        <li><a href="/enterprise">Enterprise</a></li>
+                        <li><a href="/pricing?ui_step=28&amp;ui_element=5">Pricing</a></li>
+                        <li><a href="https://get.slack.help/hc/en-us">Support</a></li>
+                        <li><a href="/guides">Slack Guides</a></li>
+                        <li><a href="/apps">App Directory</a></li>
+                        <li><a href="https://api.slack.com/">API</a></li>
+                    </ul>
+                </div>
+            </section>
+
+           </footer> -->
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>

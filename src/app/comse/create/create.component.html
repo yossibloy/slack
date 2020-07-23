@@ -1,0 +1,15 @@
+<div class="img" >
+<img style="padding: 20px" src="https://a.slack-edge.com/4f28/img/slack_logo.svg" width="100px">
+<hr>
+<br><br>
+<h1><b> What's the name of your company or team?</b></h1>
+<form   [formGroup]="crate" >
+<input   StyleDirectiv formControlName="name" placeholder ="enter your workspaces name"><br><br>
+<input  StyleDirectiv formControlName="email" placeholder ="enter your gmail adress "><br><br>
+<input  StyleDirectiv formControlName="password" placeholder ="enter your password"><br><br>
+</form>
+
+<button StyleDirectiv class="btcontinu"  (click)="oncreate()"  [disabled]="crate.invalid"
+mat-raised-button>Next</button>
+
+</div>
